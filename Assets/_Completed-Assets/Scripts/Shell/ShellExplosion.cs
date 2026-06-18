@@ -63,7 +63,7 @@ namespace Complete
 
             // Once the particles have finished, destroy the gameobject they are on.
             ParticleSystem.MainModule mainModule = m_ExplosionParticles.main;
-            Destroy (m_ExplosionParticles.gameObject, mainModule.duration);
+            Destroy(m_ExplosionParticles.gameObject, m_ExplosionParticles.main.duration);
 
             // Destroy the shell.
             Destroy (gameObject);
